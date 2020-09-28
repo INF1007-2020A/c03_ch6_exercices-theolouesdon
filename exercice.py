@@ -5,9 +5,17 @@
 def order(values: list = None) -> bool:
     if values is None:
         # TODO: Demander les valeurs ici
-        pass
-
-    return False
+        liste_saisie = []
+        while len(liste_saisie) < 10:
+            liste_saisie.append(int(input('saisir un nombre entier'))
+        reponse = True
+            for element in range(length(liste_saisie)):
+                if element <= element+1
+                    continue
+                else 
+                    reponse = False
+                    break
+        return reponse
 
 
 def anagrams(words: list = None) -> bool:
