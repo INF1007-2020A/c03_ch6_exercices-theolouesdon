@@ -21,9 +21,17 @@ def order(values: list = None) -> bool:
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: Demander les mots ici
-        pass
-
-    return False
+        word1 = input('saisir le premier mot')
+        word2 = input('saisir le deuxième mot')
+        if len(word1) == len(word2):
+            word1 = list[word1]
+            word2 = list[word2]
+            for letter in rang(len(word1)):
+                if letter in word2:
+                    word2.remove(letter)
+                else:
+                    break
+    return len(word2) == 0
 
 
 def contains_doubles(items: list) -> bool:
