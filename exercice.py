@@ -35,7 +35,7 @@ def anagrams(words: list = None) -> bool:
 
 
 def contains_doubles(items: list) -> bool:
-    return False
+    return len(items) == len(set(items))
 
 
 def best_grades(student_grades: dict) -> dict:
@@ -47,8 +47,11 @@ def histogram(sentence: str) -> tuple:
     # TODO: Créer l'histogramme a l'aide d'un dictionnaire
     #       Afficher l'histogramme et les lettres les plus fréquentes
     #       Retourner l'histogramme et le tableau de lettres
-
-    return {}, []
+    sentence_set = set(sentence)
+    resultat = {}
+        for letter in sentence_set:
+            resultat[lettre] = sentence.count(lettre)
+    return resultat
 
 
 def get_recipes():
